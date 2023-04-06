@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    display: grid;
+    place-items: center;
+    background-color: #595858;
+}
+
+.container {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btns {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.btn {
+    font-size: 30px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+.btn.rock {
+    color: white;
+    background-color: brown;
+}
+
+.btn.paper {
+    background-color: #d8d6d6;
+}
+
+.btn.scissor {
+    color: white;
+    background-color: #2e4d63;
+}
