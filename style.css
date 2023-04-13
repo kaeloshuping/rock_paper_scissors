@@ -5,10 +5,26 @@ html, body {
     background-color: #595858;
 }
 
-.container {
+#main-container {
+    max-height: 350px;
+    display: grid;
+    place-items: center;
+}
+
+#scores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    gap: 50px;
+}
+
+.button-container {
     margin: auto;
     width: 500px;
-    height: 500px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
