@@ -88,6 +88,7 @@ const getUserChoice = function (choice) {
     return result;
   };
 
+// this function takes the user and computer's current score as arguments and updates the scoreboard
 function updateScoreBoard(userScore, computerScore) {
   let newUserScoreID = document.getElementById('user-score');
   newUserScoreID.style.fontSize = '20px'
@@ -97,12 +98,14 @@ function updateScoreBoard(userScore, computerScore) {
   newComputerScoreID.innerText = 'Computer score: ' + computerScore ;
 };
 
+// this function updates the outcomes on the GUI in the case the player wins a round
 function updatePlayerResult() {
   let playerResultID = document.getElementById('result');
   playerResultID.innerText = "You win " + playerChoice + " beats " + computerChoice + "!";
   playerResultID.style.color = '#60f952';
 };
 
+// this function updates the outcomes on the GUI in the case the computer wins a round
 function updateComputerResult() {
   let computerResultID = document.getElementById('result');
   computerResultID.innerText = "You lose " + computerChoice + " beats " + playerChoice + "!";
