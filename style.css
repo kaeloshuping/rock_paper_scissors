@@ -11,6 +11,11 @@ html, body {
     place-items: center;
 }
 
+#header-text {
+    font-size: 20px;
+    color: white;
+}
+
 #scores {
     display: flex;
     justify-content: center;
